@@ -12,7 +12,7 @@ type CellActionDeleteProps = {
 export function CellActionDelete({ onClick, ...rest }: CellActionDeleteProps) {
   return (
     <GridActionsCellItem
-      icon={<Icon.Trash />}
+      icon={<Icon.Trash className="w-4" />}
       label="Delete"
       color="primary"
       onClick={() => {

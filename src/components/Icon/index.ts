@@ -3,6 +3,7 @@ import { ArrowBigLeft } from "./arrowBigLeft";
 import { ChevronRight } from "./chevronRight";
 import { ChevronDown } from "./chevronDown";
 import { FolderOpen } from "./folderOpen";
+import { CirclePlus } from "./circlePlus";
 import { BookOpen } from "./bookOpen";
 import { Ellipsis } from "./ellipsis";
 import { Search } from "./search";
@@ -22,6 +23,7 @@ const Icon = {
   ArrowBigLeft,
   ChevronDown,
   FolderOpen,
+  CirclePlus,
   Ellipsis,
   BookOpen,
   Search,

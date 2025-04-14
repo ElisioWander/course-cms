@@ -1,6 +1,10 @@
-export function Search({
-  className = "lucide lucide-search-icon lucide-search text-zinc-700",
-}) {
+import { cn } from "@/lib/utils";
+
+type SearchProps = {
+  className: string;
+};
+
+export function Search({ className }: SearchProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -12,7 +16,10 @@ export function Search({
       strokeWidth="1.25"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className={className}
+      className={cn(
+        "lucide lucide-search-icon lucide-search text-gray-700",
+        className
+      )}
     >
       <circle cx="11" cy="11" r="8" />
       <path d="m21 21-4.3-4.3" />

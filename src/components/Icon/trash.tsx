@@ -1,6 +1,10 @@
-export function Trash({
-  className = "lucide lucide-trash-icon lucide-trash text-zinc-700 ",
-}) {
+import { cn } from "@/lib/utils";
+
+type TrashProps = {
+  className?: string;
+};
+
+export function Trash({ className }: TrashProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -12,7 +16,10 @@ export function Trash({
       strokeWidth="1.25"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className={className}
+      className={cn(
+        "lucide lucide-trash-icon lucide-trash text-zinc-700",
+        className
+      )}
     >
       <path d="M3 6h18" />
       <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />

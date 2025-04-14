@@ -25,7 +25,7 @@ const data = [
   { id: 20, name: "Curso I", description: "Descrição do curso I" },
 ];
 
-export default function Table() {
+export function Table() {
   function handleClickItem(event: TableClickItemProps, rowData: unknown) {
     console.log(event);
     console.log(rowData);

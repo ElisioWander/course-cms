@@ -12,7 +12,7 @@ type CellActionEditProps = {
 export function CellActionEdit({ onClick, ...rest }: CellActionEditProps) {
   return (
     <GridActionsCellItem
-      icon={<Icon.Pencil />}
+      icon={<Icon.Pencil className="w-4" />}
       label="Edit"
       color="primary"
       onClick={() => onClick && onClick("edit")}

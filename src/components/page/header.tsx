@@ -1,4 +1,5 @@
 import { HTMLAttributes, ReactNode } from "react";
+import { cn } from "@/lib/utils";
 
 type HeaderProps = HTMLAttributes<HTMLDivElement> & {
   children: ReactNode;
@@ -7,7 +8,10 @@ type HeaderProps = HTMLAttributes<HTMLDivElement> & {
 export function Header({ children, className, ...rest }: HeaderProps) {
   return (
     <header
-      className={`bg-white border-b border-b-gray-200 h-auto md:h-12 flex items-center py-3 md:py-4 px-4 md:px-5 ${className}`}
+      className={cn(
+        "bg-white border-b border-b-gray-200 h-auto md:h-12 flex items-center px-4 ",
+        className
+      )}
       {...rest}
     >
       {children}
