@@ -2,6 +2,7 @@
 
 import { DataTable, GridColDef } from "@/components/DataTable";
 import { TableClickItemProps } from "@/interfaces";
+import { useRouter } from "next/navigation";
 
 const data = [
   { id: 1, name: "Curso A", description: "Descrição do curso A" },
@@ -26,9 +27,13 @@ const data = [
 ];
 
 export function Table() {
+  const router = useRouter();
+
   function handleClickItem(event: TableClickItemProps, rowData: unknown) {
     console.log(event);
     console.log(rowData);
+
+    router.push("/courses/1");
   }
 
   const columns: GridColDef[] = [

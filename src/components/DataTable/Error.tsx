@@ -1,3 +1,4 @@
+import Image from "next/image";
 import errorImage from "./assets/images/error.svg";
 
 export function Error({ errorMessage }: { errorMessage: string }) {
@@ -7,12 +8,7 @@ export function Error({ errorMessage }: { errorMessage: string }) {
         className="w-[250px] h-[250px] flex flex-col items-center justify-center rounded-full "
         // background: 'linear-gradient(to top, #ffffff, #fdfcfd, #fafafa, #f8f7f8, #f5f5f6);',
       >
-        <img
-          src={errorImage}
-          alt="Imagem de erro"
-          width="148px"
-          height="148px"
-        />
+        <Image src={errorImage} alt="Imagem de erro" width={148} height={148} />
       </div>
       <div className="flex flex-col gap-2 text-center">
         <h4 className="font-bold">Ops! Algo deu errado</h4>

@@ -9,7 +9,7 @@ export function Header({ children, className, ...rest }: HeaderProps) {
   return (
     <header
       className={cn(
-        "bg-white border-b border-b-gray-200 h-auto md:h-12 flex items-center px-4 ",
+        "bg-white border-b border-b-gray-200 h-14 flex items-center px-4",
         className
       )}
       {...rest}

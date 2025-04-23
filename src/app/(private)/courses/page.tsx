@@ -1,8 +1,8 @@
-import { Button } from "@/components/button";
 import { Input } from "@/components/input";
 import { Page } from "@/components/page";
 import Icon from "@/components/Icon";
 
+import { AddForm } from "./addForm";
 import { Table } from "./table";
 
 export default function Courses() {
@@ -14,9 +14,10 @@ export default function Courses() {
           icon={<Icon.Search className="text-gray-400" />}
         />
         <Page.Actions>
-          <Button startIcon={<Icon.CirclePlus />}>Novo curso</Button>
+          <AddForm />
         </Page.Actions>
       </Page.Header>
+
       <Page.Content>
         <Table />
       </Page.Content>

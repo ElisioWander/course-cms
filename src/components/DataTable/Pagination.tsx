@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
 import { useMemo } from "react";
@@ -36,6 +37,7 @@ export function Pagination(props: PaginationProps) {
 
     if ((totalRecords || 0) < pageSize) return 1;
     return Math.max(Math.ceil((totalRecords || 0) / pageSize));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [totalRecords, pageSize]);
 
   const totalRecordsLabel = useMemo(() => {
@@ -63,6 +65,7 @@ export function Pagination(props: PaginationProps) {
     // )} de ${totalRecords}`
 
     return `Exibindo regisros de ${totalRecords}`;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pagination, pages]);
 
   // const showPagination = Boolean((totalRecords || 0) > pageSize)

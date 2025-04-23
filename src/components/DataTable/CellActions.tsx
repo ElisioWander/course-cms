@@ -12,7 +12,7 @@ export function CellActions(props: CellActionsProps) {
     <>
       {Children.map(children, (child) => {
         if (isValidElement(child)) {
-          return cloneElement(child as React.ReactElement<any>, {
+          return cloneElement(child as never, {
             onClick: onItemClick,
           });
         }

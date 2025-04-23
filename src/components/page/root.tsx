@@ -6,7 +6,7 @@ type PageContainerProps = HTMLAttributes<HTMLDivElement> & {
 
 export function Root({ children, ...rest }: PageContainerProps) {
   return (
-    <div id="layout-content" className={`flex-1 w-full`} {...rest}>
+    <div id="layout-content" className={`flex-1 w-full h-full`} {...rest}>
       {children}
     </div>
   );
