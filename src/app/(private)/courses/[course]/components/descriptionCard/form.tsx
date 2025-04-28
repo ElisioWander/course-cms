@@ -1,3 +1,5 @@
+"use client";
+
 import { ButtonContainer } from "@/components/buttonContainer";
 import { Input } from "@/components/input";
 import { Fade } from "@/components/fade";
@@ -7,7 +9,7 @@ import { Button } from "@/ui/button";
 export function Form() {
   return (
     <div className="flex flex-col gap-4">
-      <Input placeholder="Digite seu novo título aqui..." />
+      <Input placeholder="Digite a descrição aqui..." />
 
       <ButtonContainer>
         <Fade.Close>

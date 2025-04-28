@@ -1,7 +1,7 @@
 "use client";
 
-import { Fade } from "@/components/fade";
 import { Box } from "@/components/Box";
+import { Fade } from "@/components/fade";
 import Icon from "@/components/Icon";
 
 import { Button } from "@/ui/button";
@@ -12,7 +12,7 @@ export function TitleCard() {
     <Box.Content>
       <Fade.Root>
         <div className="flex items-center justify-between mb-4">
-          <h4 className="text-sm font-semibold">Título do capítulo</h4>
+          <h4 className="text-sm font-semibold">Título do curso</h4>
           <Fade.Trigger>
             <Button variant="ghost">
               <Icon.Pencil />
@@ -26,7 +26,7 @@ export function TitleCard() {
         </Fade.Visible>
 
         <Fade.Invisible>
-          <Box.Paragrapth>Capítulo 1</Box.Paragrapth>
+          <Box.Paragrapth>Curso 1</Box.Paragrapth>
         </Fade.Invisible>
       </Fade.Root>
     </Box.Content>

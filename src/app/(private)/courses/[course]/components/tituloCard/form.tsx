@@ -1,13 +1,12 @@
 import { ButtonContainer } from "@/components/buttonContainer";
-import { Input } from "@/components/input";
 import { Fade } from "@/components/fade";
-
+import { Input } from "@/components/input";
 import { Button } from "@/ui/button";
 
 export function Form() {
   return (
     <div className="flex flex-col gap-4">
-      <Input placeholder="Digite seu novo título aqui..." />
+      <Input placeholder="Digite seu título aqui..." />
 
       <ButtonContainer>
         <Fade.Close>

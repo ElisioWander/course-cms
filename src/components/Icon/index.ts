@@ -10,15 +10,16 @@ import { BookOpen } from "./bookOpen";
 import { Ellipsis } from "./ellipsis";
 import { Search } from "./search";
 import { IRoute } from "./iroute";
-import { Pencil } from "./pencil";
+import Pencil from "./pencil";
 import { FileUp } from "./fileUp";
 import { logIn } from "./logIn";
 import { House } from "./house";
 import { Video } from "./video";
-import { Trash } from "./trash";
+import Trash from "./trash";
 import { Image } from "./image";
 import { User } from "./user";
 import { Time } from "./time";
+import Grid from "./grid";
 
 const Icon = {
   LayoutDashboard,
@@ -42,6 +43,7 @@ const Icon = {
   Image,
   Time,
   User,
+  Grid,
 };
 
 export default Icon;

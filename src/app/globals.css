@@ -120,3 +120,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+.lucide {
+  color: #364153;
+  width: 20px;
+  height: 20px;
+  stroke-width: 0.5px;
+}

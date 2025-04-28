@@ -7,33 +7,28 @@ import Icon from "@/components/Icon";
 import { Button } from "@/ui/button";
 
 import { DescriptionCard } from "./components/descriptionCard";
-import { ChapterCard } from "./components/chapterCard";
-import { Attachments } from "./components/attachments";
-import { TitleCard } from "./components/tituloCard";
-import { ImageCard } from "./components/imageCard";
+import { VideoCard } from "./components/videoCard";
+import { TitleCard } from "./components/titleCard";
 
-export default function Course() {
+export default function Episode() {
   return (
     <Page.Root>
       <Page.Header>
         <div className="flex items-center gap-4">
-          <Link href="/courses">
+          <Link href="/courses/1">
             <Button variant="outline">
               <Icon.ChevronLeft />
             </Button>
           </Link>
+
           <div className="flex flex-col justify-center">
-            <h1 className="text-md font-semibold">Edição do curso</h1>
-            <span className="text-xs text-gray-500 font-medium ">
-              Passos finalizados (6/6)
-            </span>
+            <h1 className="text-md font-semibold">Edição dos episódios</h1>
           </div>
         </div>
 
         <Page.Actions>
-          <Button variant="outline">Publicar</Button>
           <Button>
-            <Icon.Trash color="#fff" />
+            <Icon.Trash color="white" />
           </Button>
         </Page.Actions>
       </Page.Header>
@@ -45,7 +40,7 @@ export default function Course() {
               <Box.Header>
                 <Box.Title>
                   <Box.Icon icon={<Icon.LayoutDashboard />} />
-                  Customize seu curso
+                  Customize seu episódio
                 </Box.Title>
               </Box.Header>
 
@@ -53,7 +48,6 @@ export default function Course() {
             </Box.Root>
 
             <DescriptionCard />
-            <ImageCard />
           </div>
 
           <div className="w-full flex flex-col gap-4">
@@ -61,22 +55,11 @@ export default function Course() {
               <Box.Header>
                 <Box.Title>
                   <Box.Icon icon={<Icon.ListChecks />} />
-                  Customize seus capitulos
+                  Episódios do curso
                 </Box.Title>
               </Box.Header>
 
-              <ChapterCard />
-            </Box.Root>
-
-            <Box.Root>
-              <Box.Header>
-                <Box.Title>
-                  <Box.Icon icon={<Icon.FileUp />} />
-                  Materiais Extras
-                </Box.Title>
-              </Box.Header>
-
-              <Attachments />
+              <VideoCard />
             </Box.Root>
           </div>
         </div>

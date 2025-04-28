@@ -1,14 +1,14 @@
 import { cloneElement, ReactElement } from "react";
 import { useFadeContext } from "./root";
 
-type TriggerProps = {
+type Closeprops = {
   children: ReactElement;
 };
 
-export function Trigger({ children }: TriggerProps) {
+export function Close({ children }: Closeprops) {
   const { setVisible } = useFadeContext();
 
   return cloneElement(children, {
-    onClick: () => setVisible(true),
+    onClick: () => setVisible(false),
   } as never);
 }

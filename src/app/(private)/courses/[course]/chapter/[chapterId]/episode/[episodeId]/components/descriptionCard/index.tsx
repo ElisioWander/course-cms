@@ -13,11 +13,11 @@ export function DescriptionCard() {
       <Box.Content>
         <Fade.Root>
           <div className="flex items-center justify-between mb-4">
-            <h4 className="text-sm font-semibold">Descrição do capítulo</h4>
+            <h4 className="text-sm font-semibold">Descrição do episódio</h4>
             <Fade.Trigger>
               <Button variant="ghost">
                 <Icon.Pencil />
-                Editar capítulo
+                Editar descrição
               </Button>
             </Fade.Trigger>
           </div>
